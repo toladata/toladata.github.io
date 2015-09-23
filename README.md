@@ -4,6 +4,6 @@ A framework for easily creating beautiful presentations using HTML. [Check out t
 
 TolaData  
 
-http://toldata.github.io
+http://toladata.github.io
 
 
