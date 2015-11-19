@@ -13,8 +13,8 @@ To keep our codebase lean and avoid managing raw HTML, CSS and JS, we're using [
 Middleman requires a modern Ruby installation.
 
 ```
-$ git clone https://github.com/augustmiller/tola-data tola-data
-$ cd tola-data
+$ git clone https://github.com/toladata/todata.github.io.git
+$ cd tola-data.github.io
 $ bundle install
 ```
 
