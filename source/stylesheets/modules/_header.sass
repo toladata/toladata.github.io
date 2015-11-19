@@ -1,0 +1,115 @@
+header
+  position: relative
+  z-index: 1
+
+  .tola-services
+    background-color: $color-black
+    color: $color-white
+    font-size: 80%
+    position: relative
+    z-index: 1
+
+    article
+      padding-top: 0.5rem
+      padding-bottom: 0.5rem
+
+    a
+      text-decoration: none
+
+    .service-links
+      +span-columns(6)
+      +mobile
+        display: none
+      li
+        display: inline-block
+        margin-right: 1rem
+
+    .sponsor-link
+      +span-columns(6)
+      text-align: right
+
+      +mobile
+        +span-columns(12)
+        text-align: left
+
+      a
+        &::after
+          content: ''
+          display: inline-block
+          background-image: url('../images/arrow-out.svg')
+          background-repeat: no-repeat
+          background-size: 0.5rem
+          height: 0.5rem
+          width: 0.5rem
+          margin-left: 0.5rem
+
+  .top
+    color: $color-white
+    text-shadow: 0 1px 2px rgba($color-black, 0.15)
+
+    article
+      z-index: 1
+      position: relative
+      pointer-events: none
+
+    article.nav 
+      padding-top: 4rem
+      padding-bottom: 4rem
+
+      +mobile
+        padding-top: 2rem
+        padding-bottom: 2rem
+
+      .logo
+        +span-columns(12)
+        +tablet
+          +span-columns(10)
+          +shift(1)
+        +mobile
+          +shift(0)
+          +span-columns(12)
+        img
+          width: 4rem
+          +mobile
+            width: 3rem
+
+    article.intro
+      padding-top: 8rem
+      padding-bottom: 4rem
+
+      a
+        text-decoration: none
+        border-bottom: 2px solid white
+
+      +mobile
+        padding-top: 4rem
+        padding-bottom: 2rem
+
+      .title
+        pointer-events: auto
+        +span-columns(8)
+        +tablet
+          +span-columns(10)
+          +shift(1)
+        +mobile
+          +shift(0)
+          +span-columns(12)
+
+body.index
+  header
+    .top
+      //background-color: $color-red
+      background-image: url(../images/landscape.jpg)
+      background-position: center 70%
+      background-size: cover
+      background-repeat: no-repeat
+
+body.tables
+  header
+    .top
+      background-color: $color-blue
+
+body.activity
+  header
+    .top
+      background-color: $color-orange

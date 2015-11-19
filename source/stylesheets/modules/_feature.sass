@@ -1,0 +1,27 @@
+section.feature
+  z-index: -1
+  background-color: $color-white
+
+  &:nth-of-type(even)
+    background-color: $color-grey-light
+    
+  .content
+    +span-columns(8)
+    +shift(2)
+
+    +tablet
+      +span-columns(10)
+      +shift(1)
+
+
+    +mobile
+      +span-columns(12)
+      +shift(0)
+
+  &.map
+    color: $color-white
+    background-color: $color-dark-grey
+    background-image: url(../images/map.svg)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover

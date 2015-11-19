@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+html,
+body
+  font-size: $type-size-base
+  line-height: $type-leading-base
+  font-variant-numeric: lining-nums
+  font-feature-settings: "lnum"
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-kerning: normal
+
+html
+  overflow-x: hidden
+
+body
+  background-color: $color-white
+  color: $color-black
+  font-family: $type-family-sans
+  overflow-x: hidden
+  font-weight: $type-weight-regular
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  img
+    display: inline-block
+    width: 1em
+    vertical-align: baseline
+
+h1
+  font-size: 3.3rem
+  margin-bottom: 2rem
+
+  +mobile
+    font-size: 2.5rem
+
+h2
+  font-size: 1.75rem
+  margin-bottom: 1rem
+  line-height: 2rem
+  font-weight: $type-weight-bold
+
+  +mobile
+    font-size: 1.25rem
+
+h3
+  font-size: 1.25rem
+  margin-bottom: 0.5rem
+  margin-top: 1rem
+
+strong
+  font-weight: $type-weight-bold
+
+.subheader
+  font-size: 1.25rem
+
+header,
+main,
+footer
+  display: block
+
+section
+  display: block
+
+article
+  +outer-container
+  width: 90%
+  padding: 8rem 0
+
+  +tablet
+    width: auto
+    padding: 5rem 3%
+
+  +mobile
+    padding: 2rem 1.5rem
+
+  & > *
+    min-height: 1rem
+
+p
+  & + *
+    margin-top: 1em
+
+a
+  color: inherit
+
+img,
+svg
+  display: block
+  max-width: 100%
+  height: auto
+
+::-moz-selection
+  background: $color-black
+  color: darken($color-white, 25%)
+  
+::selection
+  background: $color-black
+  color: darken($color-white, 25%)
+
+.button
+  border-radius: 9999px
+  padding: 0.6rem 1.5rem 0.5rem 1.5rem
+  cursor: pointer
+  display: inline-block
+  white-space: nowrap
+  text-decoration: none
+  +transition(0.1s linear all)
+  background-color: rgba($color-black, 0.25)
+  box-shadow: 0 0 2px rgba($color-black, 0.15) inset
+  text-shadow: 0 0 2px rgba($color-black, 0.15)
+  user-select: none
+
+  &:hover
+    background-color: rgba($color-black, 0.35)
+
+  &:active
+    box-shadow: 0 0 6px rgba($color-black, 0.25) inset

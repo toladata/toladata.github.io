@@ -1,0 +1,37 @@
+nav
+  pointer-events: none
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 0
+
+  +tablet
+    display: none
+
+  .side-nav
+    +span-columns(3)
+
+    .logo
+      pointer-events: auto
+      img
+        width: 4rem
+
+  ul
+    pointer-events: auto
+    padding-top: 2rem
+    color: $color-grey
+
+    li
+      padding-bottom: 0.1rem
+      margin-bottom: 0.25rem
+
+      a
+        text-decoration: none
+
+        &:hover
+          border-bottom: 1px solid $color-grey
+
+        &.in-view
+          border-bottom: 1px solid $color-grey
+

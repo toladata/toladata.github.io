@@ -1,0 +1,29 @@
+footer
+  background-color: $color-dark-grey
+  color: $color-white
+  font-size: 80%
+  position: relative
+  z-index: 1
+
+  article
+    padding-top: 1rem
+    padding-bottom: 1rem
+
+    a
+      text-decoration: none
+
+    .secondary-nav
+      +span-columns(8)
+      +mobile
+        +span-columns(12)
+      li
+        display: inline-block
+        margin-right: 1rem
+
+    .copyright
+      text-align: right
+      +span-columns(4)
+      +mobile
+        +span-columns(12)
+        text-align: left
+      

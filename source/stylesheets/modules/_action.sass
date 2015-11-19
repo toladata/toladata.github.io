@@ -1,0 +1,60 @@
+section.action
+  z-index: 1
+  position: relative
+  background-color: $color-orange
+  color: $color-white
+  text-shadow: 0 1px 2px rgba($color-black, 0.15)
+  
+  article
+    padding-top: 4rem
+    padding-bottom: 4rem
+
+    .prompt
+      +span-columns(5)
+      +shift(2)
+
+      +tablet
+        +span-columns(10)
+        +shift(1)
+        +omega
+
+      +mobile
+        +span-columns(12)
+        +shift(0)
+
+      h1
+        margin-bottom: 1rem
+        font-weight: $type-weight-regular
+
+    .link
+      +span-columns(2)
+      +shift(1)
+      text-align: right
+      position: relative
+
+      +tablet
+        +span-columns(10)
+        text-align: left
+
+      +mobile
+        +shift(0)
+
+
+      a
+        position: absolute
+        top: 50%
+        right: 0
+        margin-top: -1.25rem
+        padding-right: 1.35rem
+
+        +tablet
+          position: static
+          margin-top: 2rem
+
+        &::after
+          content: url('../images/arrow-right.svg')
+          display: inline-block
+          width: 0.5rem
+          margin-left: 0.75rem
+          vertical-align: -7%
+

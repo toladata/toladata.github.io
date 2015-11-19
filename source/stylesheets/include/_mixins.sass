@@ -1,0 +1,34 @@
+// Media Queries
+
+=wide
+  +breakpoint($breakpoint-desktop, min)
+    @content
+
+=desktop
+  +breakpoint($breakpoint-tablet, min)
+    @content
+
+=tablet
+  +breakpoint($breakpoint-tablet, max)
+    @content
+
+=mobile
+  +breakpoint($breakpoint-mobile, max)
+    @content
+
+=breakpoint($size, $direction: max)
+  @if $direction == max
+    @media screen and ( max-width: $size )
+      @content
+  @else
+    @media screen and ( min-width: $size )
+      @content
+
+// IDK
+
+=fill
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%

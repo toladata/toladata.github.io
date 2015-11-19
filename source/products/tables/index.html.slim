@@ -1,0 +1,20 @@
+---
+title: Tables
+stylized_title: >
+  **Tola**Tables
+intro: >
+  A data collection, aggregation and management tool for all types of data collection methods designed to track the impact of NGO programs and projects in the field.
+template: product
+---
+
+- all_features_for(current_page).each_with_index do |feature, index|
+  section.feature id="#{feature.data.title.parameterize}"
+    article
+      .content
+        = feature.render layout: false
+
+section.about
+  - about = get_child current_page, 'pages/about'
+  article
+    .footer-text
+      = about.render layout: false

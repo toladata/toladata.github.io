@@ -1,0 +1,21 @@
+---
+title: Activity
+stylized_title: >
+  **Tola**Activity
+intro: >
+  A set of standard forms, dashboard and approval process that help support adaptive management within an organization.
+template: product
+---
+
+- all_features_for(current_page).each_with_index do |feature, index|
+  section.feature id="#{feature.data.title.parameterize}"
+    article
+      .content
+        = feature.render layout: false
+
+
+section.about
+  - about = get_child current_page, 'pages/about'
+  article
+    .footer-text
+      = about.render layout: false

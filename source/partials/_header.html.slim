@@ -1,0 +1,32 @@
+section.tola-services
+  article
+    ul.service-links
+      li 
+        = link_to markdown(data.site.stylized_title), get_page.url
+      li
+        .separator |
+      li
+        - tables = get_page 'products/tables'
+        = link_to markdown(tables.data.stylized_title), tables.url
+      li
+        - activity = get_page 'products/activity'
+        = link_to markdown(activity.data.stylized_title), activity.url
+
+      li
+        a href="http://tola.work/" target="_blank" <strong>Tola</strong>Work
+
+    .sponsor-link
+      a href="http://www.mercycorps.org/" target="_blank" <strong>MercyCorps</strong>
+
+section.top
+  = partial 'partials/visualizer'
+
+  article.nav
+    .logo
+      img src="#{url_for 'logo-white.svg'}" alt="#{current_page.data.title}"
+
+  article.intro
+    .title
+      h1 = if current_page.template? then markdown current_page.data.stylized_title else current_page.title
+      .subheader 
+        = markdown current_page.data.intro

@@ -1,0 +1,24 @@
+---
+title: Home
+stylized_title: >
+  **Tola**Data
+intro: >
+  We are building a streamlined data driven Monitoring and Evaluation system that embraces technology, builds capacity, and is easily replicated.
+template: product
+---
+
+/ - all_products.each do |product|
+/   section.product id="#{product.data.title.parameterize}"
+/     = product.data.title
+
+- all_features_for(current_page).each_with_index do |feature, index|
+  section.feature id="#{feature.data.title.parameterize}" class="#{feature.data.style}"
+    article
+      .content
+        = feature.render layout: false
+
+section.about
+  - about = get_child current_page, 'pages/about'
+  article
+    .footer-text
+      = about.render layout: false

@@ -1,0 +1,42 @@
+section.about
+  z-index: 1
+  position: relative
+  background-color: $color-black
+  color: $color-grey-light
+  article
+    .footer-text
+      +shift(2)
+      +span-columns(8)
+      +tablet
+        +span-columns(10)
+        +shift(1)
+      +mobile
+        +shift(0)
+        +span-columns(12)
+
+    a
+      text-decoration: none
+      font-weight: 700
+
+body.index
+  .about
+    a
+      color: $color-red
+
+  .credit
+    color: $color-grey
+    font-size: 85%
+    a
+      font-weight: normal
+      color: $color-grey
+      text-decoration: underline
+
+body.activity
+  .about
+    a
+      color: $color-orange
+
+body.tables
+  .about
+    a
+      color: $color-blue

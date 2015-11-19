@@ -1,0 +1,33 @@
+aside.visualizer
+  +fill
+  overflow: hidden
+  // z-index: 0
+  opacity: 0.08
+
+  .wrapper
+    font-size: 0
+    line-height: 0
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+  .cell
+    display: inline-block
+    width: 32px
+    height: 32px
+    background-color: transparent
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 32px 32px
+    opacity: 0
+    transition: opacity 1s ease-out
+
+    &.one
+      background-image: url('../images/io-icon-i.svg')
+
+    &.zero
+      background-image: url('../images/io-icon-o.svg')
+
+    &.visible
+      opacity: 1

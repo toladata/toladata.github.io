@@ -1,0 +1,11 @@
+nav
+  section
+    article
+      .side-nav
+        .logo data-scrollto="#top"
+          img src="#{url_for 'logo.svg'}" alt="#{current_page.data.title}"
+        ul
+          - all_features_for(current_page).each_with_index do |feature, index|
+            li
+              - id = feature.data.title.parameterize
+              a href="##{id}" data-scrollto="##{id}" = feature.data.title
