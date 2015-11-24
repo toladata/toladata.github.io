@@ -27,6 +27,10 @@ html
     - if current_page.data.template == 'product'
       = partial 'partials/side-nav'
 
+  = javascript_include_tag "https://use.typekit.net/lmu1xjz.js"
+  javascript:
+    try{Typekit.load({ async: true });}catch(e){}
+    
   = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"
   = javascript_include_tag "app"
 

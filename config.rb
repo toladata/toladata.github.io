@@ -72,14 +72,17 @@ configure :build do
   # activate :relative_assets
 
   # Or use a different image path
-  set :http_prefix, "/tola-data/"
+  set :http_prefix, ""
 end
 
 # Helpahs
 require "lib/helpers"
 helpers Tola
 
-# Deployment Options
-activate :deploy do |deploy|
-  deploy.method = :git
+# github deploy
+ activate :deploy do |deploy|
+   deploy.method = :git
+   deploy.build_before = true
+   deploy.branch   = "master"
+   deploy.remote   = "git@github.com:toladata/toladata.github.io.git"
 end

@@ -2,8 +2,6 @@ class Waypoint
   constructor: (@el) ->
     @target = $(@el.data('scrollto'))
 
-    console.log @
-
     $(window).on 'resize.Waypoint', (e) => @measure()
     $(window).on 'scroll.Waypoint', (e) => @poll()
 

@@ -39,4 +39,4 @@ $ middleman build
 $ middleman deploy
 ```
 
-A shortcut for this is the one-line `$ middleman deploy --build-before`. Additionally, you may add automatic building to the config hash in `config.rb`. Please only deploy from the `master` branch. Verify your changes at the project's [public-facing endpoint](http://toladata.github.io/tola-data/).
+A shortcut for this is the one-line `$ middleman deploy --build-before`. Additionally, you may add automatic building to the config hash in `config.rb`. Please only deploy from the `master` branch. Verify your changes at the project's [public-facing endpoint](http://toladata.com).

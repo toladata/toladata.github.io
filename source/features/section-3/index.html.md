@@ -1,5 +1,5 @@
 ---
-title: Section Three
+title: Approach
 position: 3
 style: "map"
 layout: false

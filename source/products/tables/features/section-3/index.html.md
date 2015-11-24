@@ -1,9 +1,9 @@
 ---
-title: Section Three
+title: Open Data
 position: 3
 layout: false
 ---
 
-## Section introduction.
+## Open Source, Open Data.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut arcu id urna placerat pharetra. Aliquam quis volutpat velit. Vivamus quis finibus ex. Maecenas ex lorem, tincidunt sit amet sagittis in, viverra eget magna. Donec rhoncus ante id tellus mattis ullamcorper. Morbi vitae tellus ut eros mattis viverra maximus sit amet elit. Curabitur suscipit fringilla velit eu congue. Fusce auctor ipsum sit amet lacus porttitor, a dapibus velit molestie. Sed ac mi ut purus varius imperdiet eu in neque. Aliquam tincidunt vestibulum libero, ac aliquet nisl. Duis et lectus ut nisi condimentum fringilla sit amet quis eros. Pellentesque ut ipsum odio. Pellentesque a augue orci. Fusce placerat massa eget molestie cursus. Vivamus pharetra eu nunc a porttitor.
+Each table can be shared as a public repository or privately with other users through our external REST data service API for integration with other data platforms or analysis tools or exported to a new or existing Google sheet or downloaded as any number of file types including csv/excel files.  Tola Tables also provides direct record editing and clean up within the tool as well as a set of map and merge tools to allow the user to merge multiple data silos into one.

@@ -1,5 +1,5 @@
 ---
-title: Section One
+title: Challenges
 position: 1
 layout: false
 ---
