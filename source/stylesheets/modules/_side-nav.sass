@@ -10,7 +10,8 @@ nav
     display: none
 
   .side-nav
-    +span-columns(3)
+    +span-columns(2)
+    //max-width: 10rem
 
     .logo
       pointer-events: auto
@@ -24,14 +25,13 @@ nav
 
     li
       padding-bottom: 0.1rem
-      margin-bottom: 0.25rem
+      margin-bottom: 0.75rem
+      line-height: 1.25rem
 
       a
         text-decoration: none
 
-        &:hover
-          border-bottom: 1px solid $color-grey
-
+        &:hover,
         &.in-view
-          border-bottom: 1px solid $color-grey
+          text-decoration: underline
 
