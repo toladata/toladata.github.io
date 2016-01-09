@@ -13,6 +13,7 @@ html
     title = "#{data.site.title} | #{current_page.data.title}"
 
     = stylesheet_link_tag "app"
+    = favicon_tag 'images/favicon.ico'
 
   body class="#{page_classes} #{get_slug current_page}"
     header#top
